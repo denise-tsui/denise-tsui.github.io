@@ -1,3 +1,11 @@
+
+
+# Attributions
+Menu Icon: Icon by Freepik "https://www.freepik.com/icon/frog_1635941"
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

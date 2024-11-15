@@ -1,9 +1,13 @@
 @import "./vars.css";
 
+.main {
+    margin-left: 10px;
+}
+
 .App {
     background-color: var(--color-bg);
     width: 100%;
     height: 100%;
 
-    color: whitesmoke
+    color: var(--color-bg);
 }

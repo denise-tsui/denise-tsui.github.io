@@ -1,0 +1,5 @@
+@import "../../vars.css";
+
+.section {
+    background-color: var(--color-bg);
+}

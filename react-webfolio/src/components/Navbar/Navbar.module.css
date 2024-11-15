@@ -1,5 +1,8 @@
 @import "../../vars.css";
 
+.section {
+    background-color: var(--color-bg);
+}
 .navbar {
     position: relative;
     display: flex;
@@ -8,6 +11,7 @@
     padding-top: 55px;
     z-index: 2;
     margin: 0 25%;
+    background-color: var(--color-bg);
 }
 
 .title {
@@ -15,10 +19,15 @@
     font-weight: 380;
     text-decoration: none;
     color: var(--color-text);
+    margin-bottom: 5px;
 }
 
 .menu {
     display: flex;
+}
+
+.menuDropdown {
+    display: none;
 }
 
 .menuItems{
@@ -33,7 +42,11 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 830px) {
+.menuItems a:hover {
+    background-color: var(--color-highlight);
+}
+
+@media screen and (max-width: 1225px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -54,28 +67,29 @@
     .menuDropdown {
         display: block;
         cursor: pointer;
-        /* transform: scale(sx, sy); */
-        /* max-width: 5px;
-        max-height: 5px; */
+        align-items: center;
     }
 
     .menuItems {
         display: none;
+        margin-top: 10px;
         flex-direction: column;
         align-items: center;
-        gap: 13px;
-        border-radius: 22px;
+        gap: 12px;
+        border-radius: 48px;
         background: #F3F7F3;
-  
         background: linear-gradient(
             0deg, 
-            #566246 0%, 
-            #F3F7F3 100%
+            
         );
-        padding: 24px 33px;
-        
-    }
+        padding: 24px 24px;
+}
 
+    .menuItems a {
+        font-size: 15px;
+        color: var(--color-text);
+        text-decoration: none;
+    }
     .menuOpen {
         display: flex;
         z-index: 1;
